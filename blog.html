@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shazz Tours and Travels Blogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .blog-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        .blog-links li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .blog-links li:hover {
+            background-color: #f0f0f0;
+        }
+        .article {
+            display: none;
+            background-color: #fff;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .active-article {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Shazz Tours and Travels Blogs</h1>
+</header>
+
+<ul class="blog-links">
+    <li onclick="openArticle('article1')">Blog Post 1: Exploring the World</li>
+    <li onclick="openArticle('article2')">Blog Post 2: Top Destinations in 2024</li>
+    <li onclick="openArticle('article3')">Blog Post 3: Travel Tips for Newbies</li>
+    <li onclick="openArticle('article4')">Blog Post 4: Sustainable Travel Choices</li>
+</ul>
+
+<div id="article1" class="article">
+    <h2>Exploring the World</h2>
+    <p>Welcome to this amazing blog post about exploring the world! Here, we talk about the best places to visit and how to plan your travels effectively.</p>
+</div>
+<div id="article2" class="article">
+    <h2>Top Destinations in 2024</h2>
+    <p>In this post, we highlight the top destinations for travel in 2024. Whether you're looking for adventure or relaxation, we've got you covered.</p>
+</div>
+<div id="article3" class="article">
+    <h2>Travel Tips for Newbies</h2>
+    <p>If you're new to traveling, this post will give you all the tips and tricks you need to make your first trip stress-free and enjoyable.</p>
+</div>
+<div id="article4" class="article">
+    <h2>Sustainable Travel Choices</h2>
+    <p>As a traveler, it's important to consider the impact of your choices on the environment. In this article, we explore sustainable travel options and eco-friendly tips.</p>
+</div>
+
+<script>
+    // Function to open a specific article and close others
+    function openArticle(articleId) {
+        // Hide all articles
+        var articles = document.querySelectorAll('.article');
+        articles.forEach(function(article) {
+            article.classList.remove('active-article');
+        });
+        
+        // Show the clicked article
+        var selectedArticle = document.getElementById(articleId);
+        selectedArticle.classList.add('active-article');
+    }
+</script>
+
+</body>
+</html>
