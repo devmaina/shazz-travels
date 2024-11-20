@@ -47,7 +47,7 @@ function slideImages() {
 
 // Start the slideshow loop
 function startSlideshow() {
-    setInterval(slideImages, 50); // 50ms interval for smooth continuous movement
+    setInterval(slideImages, 120); // 50ms interval for smooth continuous movement
 }
 
 // Load images and start the slideshow on page load
