@@ -1,8 +1,8 @@
 :root {
-    --light-background: #f8f9fa; /* Light background color */
-    --dark-text: #333; /* Dark text color */
-    --primary-color: #4CAF50; /* Green background */
-    --primary-hover: #45a049; /* Darker green on hover */
+    --light-background: #f8f9fa;
+    --dark-text: #333;
+    --primary-color: #4CAF50;
+    --primary-hover: #45a049;
     --section-background-light: #f6ffd0;
     --section-background-dark: #e7f3fe;
 }
@@ -11,7 +11,7 @@ body {
     scroll-behavior: smooth;
     background-color: aliceblue;
     text-align: center;
-    font-family: 'Montserrat', 'Century Gothic', sans-serif; /* Font family */
+    font-family: 'Montserrat', 'Century Gothic', sans-serif;
 }
 
 .hero {
@@ -46,15 +46,6 @@ body {
     transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-    .hero-button {
-        padding: 10px 20px;
-    }
-}
-
 .slideshow-container {
     position: relative;
     width: 100%;
@@ -74,15 +65,6 @@ body {
     height: 30vw;
     object-fit: cover;
     border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-    .slideshow-container {
-        height: 20vw;
-    }
-    .slideshow img {
-        margin-right: 2px;
-    }
 }
 
 main {
@@ -117,67 +99,27 @@ section {
 
 #gallery .gallery-item {
     flex: 1 1 calc(33% - 10px);
-    height: 30vw; /* Set height as 30% of the viewport width */
-    overflow: hidden; /* Hide any overflow */
+    height: 30vw;
+    overflow: hidden;
     display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    justify-content: space-between; /* Distribute space between image and text */
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #gallery .gallery-item img {
     width: 100%;
-    height: 80%; /* Set the height of the image to 80% of the gallery item */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    height: 80%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
 #gallery .gallery-item p {
-    padding: 10px; /* Add some padding to the text */
-    font-size: 1rem; /* Set a reasonable font size */
-    color: #333; /* Text color */
-    margin: 0; /* Remove default margin */
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
 }
 
-
-@media (max-width: 768px) {
-    main {
-        padding: 10px;
-    }
-
-    section {
-        margin: 10px 0;
-        padding: 15px;
-    }
-
-    #gallery .gallery-item {
-        flex: 1 1 calc(50% - 10px);
-    }
-
-    #gallery .gallery-item img {
-        border-radius: 3px;
-    }
-
-    h2 {
-        
-        font-size: 1.5em;
-    }
-
-    p, ul {
-        font-size: 0.9em;
-    }
-
-    .menu-icon {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 480px) {
-    #gallery .gallery-item {
-        flex: 1 1 100%;
-    }
-}
-
-/* Navbar styles */
 .navbar {
     background-color: var(--dark-text);
     border-radius: 10px;
@@ -193,7 +135,6 @@ section {
     max-width: 40px;
     height: auto;
     margin-left: 30px;
-
     border-radius: 15px;
 }
 
@@ -229,17 +170,14 @@ section {
     display: flex;
 }
 
-
 h2 {
-color: var(--primary-hover);
-        
+    color: var(--primary-hover);
 }
 
 a {
-color: var(--primary-hover);
+    color: var(--primary-hover);
     text-decoration: none;
 }
-
 
 .popup-menu a {
     text-decoration: none;
@@ -251,19 +189,14 @@ color: var(--primary-hover);
     background-color: #f1f1f1;
 }
 
-
 li {
-list-style: none;
+    list-style: none;
     list-style-type: none;
     text-align: left;
     margin-right: 20vw;
     margin-left: 20vw;
 }
 
-
-
-
-/* Container for all testimonials */
 .testimonial-container {
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +205,6 @@ list-style: none;
     margin: 0 auto;
 }
 
-/* Individual testimonial card styling */
 .testimonial {
     flex: 1 1 calc(23% - 20px);
     background-color: white;
@@ -285,14 +217,12 @@ list-style: none;
     align-items: flex-start;
 }
 
-/* Header section with image and name */
 .testimonial-header {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Aligns the icon/image to the right */
+    justify-content: flex-end;
 }
 
-/* Testimonial image styling */
 .testimonial-image {
     width: 50px;
     height: 50px;
@@ -300,22 +230,52 @@ list-style: none;
     margin-left: 20px;
 }
 
-/* Testimonial name styling */
 .testimonial-name {
     color: #007bff;
     font-size: 18px;
     margin-left: 20px;
 }
 
-/* Testimonial text styling */
 .testimonial-text {
     font-size: 16px;
     color: #555;
     margin-top: 10px;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+
+li  {
+   
+    margin-right: 5vw;
+    margin-left: 2vw;
+}
+
+    
+    main {
+        padding: 2px;
+    }
+
+    section {
+        margin: 5px 0;
+        padding: 1px;
+    }
+
+    #gallery .gallery-item img {
+        border-radius: 2px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, ul {
+        font-size: 0.9em;
+    }
+
+    .menu-icon {
+        font-size: 1.5em;
+    }
+
     .testimonial {
         flex: 1 1 100%;
     }
@@ -325,20 +285,39 @@ list-style: none;
     }
 
     .testimonial-header {
-        justify-content: center; /* Center the image and name on small screens */
+        justify-content: center;
     }
 
     .testimonial-image {
-        margin-left: 0; /* Remove the margin for small screens */
+        margin-left: 0;
+
+
+
     }
+    
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    p, ul {
+        font-size: 0.9em;
+    }
+
+    .hero-button {
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+
+    #gallery .gallery-item {
+        flex: 1 1 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+#contact , h2  {
+font-weight: 600;
+    font-size: small;
 }
 
-@media (max-width: 480px) {
-    .testimonial-name {
-        font-size: 16px; /* Adjust font size for very small screens */
-    }
-
-    .testimonial-text {
-        font-size: 14px; /* Adjust font size for very small screens */
-    }
 }

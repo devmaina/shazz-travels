@@ -42,12 +42,36 @@
             display: block;
         }
     </style>
+        <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+ 
+<nav class="navbar">
+    <!-- Logo on the left -->
+   <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo">  </a> 
 
-<header>
-    <h1>Shazz Tours and Travels Blogs</h1>
-</header>
+    <!-- Site name and slogan -->
+    <div class="site-info">
+        <div>  
+            <h1 style="font-family: 'Dancing Script', cursive;">Shazz-Travels Blogs </h1>
+        </div>
+
+                      </div>
+
+    <!-- Hamburger menu icon -->
+    <div class="menu-icon" id="menu-icon">☰</div>
+
+    <!-- Popup menu -->
+    <div class="popup-menu" id="popup-menu">
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="blog.html">Blog</a>
+
+    </div>
+</nav>
+
+
 
 <ul class="blog-links">
     <li onclick="openArticle('article1')">Blog Post 1: Exploring the World</li>
@@ -88,5 +112,10 @@
     }
 </script>
 
-</body>
+
+<script src="script2.js"></script>
+
+
+
+
 </html>
